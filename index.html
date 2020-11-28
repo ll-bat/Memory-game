@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel='stylesheet' href='style.css' />
+    <title>Memory game</title>
+    <script src='custom.js'></script>
+    <script src='Game.js'></script>
+    <script src='Cards.js'></script>
+    <script src='Card.js'></script>
+</head>
+<body>
+
+    <div id='backdrop' class='position-absolute'>
+        <div id='menu'>
+            <button class='btn btn-primary my-btn px-5 py-2 my-2' onclick='level(1)'>Ease</button>
+            <button class='btn btn-warning my-btn px-5 py-2 my-2 text-white'  onclick='level(2)'>Medium</button>
+            <button class='btn btn-danger  my-btn px-5 py-2 my-2'  onclick='level(3)'>Hard</button>
+            </div>
+        </div>
+    </div>
+
+    <div id='header' class='text-white d-flex mx-5 py-4'>
+        <img src='images/logo.png' height='40'/>
+        <p class='my-2 mx-3' style="font-family: 'Courier New', Courier, monospace;"> Memory game </p> 
+    </div>
+
+    <div id='container' class='position-relative mb-2'>
+         <div id='backhover' class='position-absolute'></div>
+         <div id='time' class='position-absolute'></div>
+
+    </div>
+
+    <div id='main' class='text-white mx-2'>
+        <div id='cards' class='row'>
+
+        </div>
+    </div>
+
+    <script src='app.js'></script>
+</body>
+</html>
